@@ -5,8 +5,8 @@ const footerbottom = `
   <div class="row">
     <div class="col col-4">
         <div class="copyright">
-          <a>Sherwin-Williams.com</a>
-          <p>©<span class="date">2019</span> The Sherwin-Williams Company. Computer screens and printers vary in how colors are displayed, so the colors you see may not match the coating’s actual color.</p>
+          <a>SW.com</a>
+          <p>©<span class="date">2019</span> The SW Company. Computer screens and printers vary in how colors are displayed, so the colors you see may not match the coating’s actual color.</p>
         </div>
     </div>
     <div class="col col-6">

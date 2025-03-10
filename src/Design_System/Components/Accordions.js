@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+import { initAccordion } from "../../js/accordion";
 import CodeContainer from "../../Atomic_Elements/Molecules/CodeContainer";
+import icons from "../../img/icons.svg";
 
 const code_accordion = `<div id="accordionGroup" class="accordion" data-allow-multiple="true">
   <h3>
@@ -57,10 +59,10 @@ const code_accordion = `<div id="accordionGroup" class="accordion" data-allow-mu
       </span>
     </button>
   </h3>
-  <div id="sect3"role="region" aria-labelledby="accordion3id" class="accordion-panel" hidden>
+  <div id="sect3" role="region" aria-labelledby="accordion3id" class="accordion-panel" hidden>
     <div>
       <p>
-        Sherwin-Williams expects its suppliers to act with integrity. Suppliers
+        SW expects its suppliers to act with integrity. Suppliers
         shall not engage (directly or indirectly) in unethical activities with
         public or private parties such as offering bribes, kickbacks, or other
         improper payments for the purpose of gaining favorable treatment.
@@ -74,12 +76,7 @@ const code_accordion = `<div id="accordionGroup" class="accordion" data-allow-mu
 
 class Accordions extends Component {
   componentDidMount() {
-    const script = document.createElement("script");
-
-    script.src = "./js/accordion.js";
-    script.async = true;
-
-    document.body.appendChild(script);
+    initAccordion();
   }
   render() {
     return (
@@ -105,10 +102,10 @@ class Accordions extends Component {
                 General Legal Compliance
                 <span className="accordion-icon">
                   <svg className="icon-svg expand">
-                    <use xlinkHref="./img/icons.svg#expand" />
+                    <use xlinkHref={`${icons}#expand`} />
                   </svg>
                   <svg className="icon-svg collapse-minus">
-                    <use xlinkHref="./img/icons.svg#collapse" />
+                    <use xlinkHref={`${icons}#collapse`} />
                   </svg>
                 </span>
               </span>
@@ -136,10 +133,10 @@ class Accordions extends Component {
                 Use of Company Name
                 <span className="accordion-icon">
                   <svg className="icon-svg expand">
-                    <use xlinkHref="./img/icons.svg#expand" />
+                    <use xlinkHref={`${icons}#expand`} />
                   </svg>
                   <svg className="icon-svg collapse-minus">
-                    <use xlinkHref="./img/icons.svg#collapse" />
+                    <use xlinkHref={`${icons}#collapse`} />
                   </svg>
                 </span>
               </span>
@@ -167,10 +164,10 @@ class Accordions extends Component {
                 Anti-Corruption
                 <span className="accordion-icon">
                   <svg className="icon-svg expand">
-                    <use xlinkHref="./img/icons.svg#expand" />
+                    <use xlinkHref={`${icons}#expand`} />
                   </svg>
                   <svg className="icon-svg collapse-minus">
-                    <use xlinkHref="./img/icons.svg#collapse" />
+                    <use xlinkHref={`${icons}#collapse`} />
                   </svg>
                 </span>
               </span>
@@ -185,7 +182,7 @@ class Accordions extends Component {
           >
             <div>
               <p>
-                Sherwin-Williams expects its suppliers to act with integrity.
+                SW expects its suppliers to act with integrity.
                 Suppliers shall not engage (directly or indirectly) in unethical
                 activities with public or private parties such as offering
                 bribes, kickbacks, or other improper payments for the purpose of

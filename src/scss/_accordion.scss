@@ -1,5 +1,6 @@
 .accordion {
   margin: 2em 0;
+
   h3 {
     display: flex;
     width: 100%;
@@ -12,25 +13,23 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       .accordion-icon {
         display: flex;
+
         svg {
           width: 24px;
           height: 24px;
         }
       }
     }
+
     span {
       color: black;
       font-weight: bold;
     }
   }
-  button {
-    background: transparent;
-    width: 100%;
-    margin: 0;
-    padding: 1em;
-  }
+
   .accordion-trigger {
     background: none;
     display: block;
@@ -40,14 +39,19 @@
     text-align: left;
     width: 100%;
     border: 0;
+    cursor: pointer;
+
     &:focus {
-      outline: 1;
+      outline: 2px solid $sw-blue; // Make sure there's a clear focus outline
     }
+
     svg.collapse-minus {
       display: none;
     }
+
     &[aria-expanded="true"] {
       background: $line-grey;
+
       svg {
         &.expand {
           display: none;
@@ -59,10 +63,6 @@
     }
   }
 
-  .accordion button::-moz-focus-inner {
-    border: 0;
-  }
-
   .accordion-title {
     display: block;
     pointer-events: none;
@@ -72,10 +72,14 @@
   .accordion-panel {
     margin: 0;
     padding: 0.5em 2em;
-  }
+    display: none; // Default to hidden
 
-  /* For Edge bug https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/4806035/ */
-  .accordion-panel[hidden] {
-    display: none;
+    &[hidden] {
+      display: none;
+    }
+
+    &:not([hidden]) {
+      display: block; // Ensures it appears when `hidden` is removed
+    }
   }
 }

@@ -5,7 +5,7 @@ class Header extends Component {
     return (
       <header>
         <div className="logo-search">
-          <img src="./img/SW_Logo_Planet.png" alt="Sherwin-Williams Logo" />
+          <img src="./img/SW_Logo_Planet.png" alt="SW Logo" />
           <div className="search-container">
             <input
               id="search"

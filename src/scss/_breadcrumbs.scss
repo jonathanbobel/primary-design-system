@@ -51,8 +51,9 @@
         color: $sw-blue;
         border-bottom: 1px solid $sw-blue;
         font-weight: 600;
+        text-decoration: none;
         &:hover {
-          text-decoration: none;
+          border-bottom: none; 
         }
       }
     }

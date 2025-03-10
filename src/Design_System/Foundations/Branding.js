@@ -7,12 +7,12 @@ class Branding extends Component {
       <div className="branding w3-col">
         <h1 className="title">Branding</h1>
         <p className="mb-5">
-          Correct use of the SHERWIN-WILLIAMS<sup>&reg;</sup> wordmark, the
+          Correct use of the SW<sup>&reg;</sup> wordmark, the
           COVER THE EARTH<sup>&reg;</sup> logo and the combined Corporate
           Identity logo is essential to the integrity of our corporate image.
           Logos should always appear exactly as they are supplied in approved
           artwork form. Modifying the artwork will not only undermine The
-          Sherwin-Williams Company’s overall image, but may jeopardize our
+          SW Company’s overall image, but may jeopardize our
           rights to exclusive use of our trademarks. Accurate reproduction and
           correct application are necessary for a consistent image.
         </p>
@@ -26,18 +26,18 @@ class Branding extends Component {
               />
             </div>
             <p className="caption">
-              Cover the Earth<sup>&reg;</sup> + Sherwin-Williams<sup>&reg;</sup>{" "}
+              Cover the Earth<sup>&reg;</sup> + SW<sup>&reg;</sup>{" "}
               Wordmark
             </p>
           </div>
           <div className="w3-col s6">
             <h3>
-              Cover the Earth<sup>&reg;</sup> + Sherwin-Williams<sup>&reg;</sup>{" "}
+              Cover the Earth<sup>&reg;</sup> + SW<sup>&reg;</sup>{" "}
               Wordmark
             </h3>
             <p>
-              The preferred Sherwin-Williams Corporate Identity is a combination
-              of two logos – the SHERWIN-WILLIAMS<sup>&reg;</sup> wordmark and
+              The preferred SW Corporate Identity is a combination
+              of two logos – the SW<sup>&reg;</sup> wordmark and
               COVER THE EARTH<sup>&reg;</sup>
               logo. These components are fixed in relation to one another and
               may not be altered or repositioned in any way.
@@ -54,24 +54,24 @@ class Branding extends Component {
               />
             </div>
             <p className="caption">
-              Sherwin-Williams<sup>&reg;</sup> Wordmark
+              SW<sup>&reg;</sup> Wordmark
             </p>
           </div>
           <div className="w3-col s6">
             <h3>
-              Sherwin-Williams<sup>&reg;</sup> Wordmark
+              SW<sup>&reg;</sup> Wordmark
             </h3>
             <p>
               In situations where the preferred logo is not an appropriate
-              version please use the SHERWIN-WILLIAMS<sup>&reg;</sup> wordmark
+              version please use the SW<sup>&reg;</sup> wordmark
               shown here.
             </p>
           </div>
         </div>
         <Button
           className="mb-5"
-          label="Download Sherwin-Williams Logos"
-          title="Download Sherwin-Williams Logos"
+          label="Download SW Logos"
+          title="Download SW Logos"
         />
         <h3>Do's and Don'ts</h3>
         <div className="w3-row">

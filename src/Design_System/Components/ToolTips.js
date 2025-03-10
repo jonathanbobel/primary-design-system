@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import CodeContainer from "../../Atomic_Elements/Molecules/CodeContainer";
+import icons from "../../img/icons.svg";
 
 const tooltips = `<p class="tooltip-text">
   Example of a ToolTip
@@ -28,12 +29,12 @@ class Tooltips extends Component {
           that interferes with critical tasks. Users can view tooltips upon
           mouse hover or focus, and is also accessible via keyboard.
         </p>
-        <p className="tooltip-text">
+        <div className="tooltip-text">
           Example of a ToolTip
           <span className="tooltip-container">
             <button className="information" aria-labelledby="information-label">
               <svg className="icon-svg information">
-                <use xlinkHref="./img/icons.svg#information" />
+                <use xlinkHref={`${icons}#information`} />
               </svg>
             </button>
             <div role="tooltip" id="information-label">
@@ -41,7 +42,7 @@ class Tooltips extends Component {
               in elementum vestibulum arcu diam eu.
             </div>
           </span>
-        </p>
+        </div>
 
         <CodeContainer text={tooltips} />
       </div>

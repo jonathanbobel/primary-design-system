@@ -59,7 +59,7 @@ const utility = `<nav class="utility">
 
 const header = `<header>
   <div class="logo-search">
-    <img src="./img/SW_Logo_Planet.png" alt="Sherwin-Williams Logo">
+    <img src="./img/SW_Logo_Planet.png" alt="SW Logo">
     <div class="search-container">
         <input id="search" type="text" name="searchterm" class="search-input" placeholder="What can we help you find?">
         <a class="link-search">
@@ -156,9 +156,9 @@ const footerbottom = `
   <div class="row">
     <div class="col col-4">
         <div class="copyright">
-          <a>Sherwin-Williams.com</a>
+          <a>SW.com</a>
           <p>
-            ©<span class="date">2019</span> The Sherwin-Williams Company. 
+            ©<span class="date">2019</span> The SW Company. 
             Computer screens and printers vary in how colors are displayed, so 
             the colors you see may not match the coating’s actual color.
           </p>

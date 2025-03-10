@@ -8,10 +8,10 @@ class FooterBottom extends Component {
         <div className="row">
           <div className="col col-4">
             <div className="copyright">
-              <a href={null}>Sherwin-Williams.com</a>
+              <a href={null}>SW.com</a>
               <p>
                 &copy;
-                <CurrentYear /> The Sherwin-Williams Company. Computer screens
+                <CurrentYear /> The SW Company. Computer screens
                 and printers vary in how colors are displayed, so the colors you
                 see may not match the coating’s actual color.
               </p>
