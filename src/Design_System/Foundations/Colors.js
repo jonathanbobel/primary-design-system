@@ -7,17 +7,10 @@ class Colors extends Component {
       <div>
         <h1 className="title">Color</h1>
         <p>
-          At Sherwin-Williams, we believe in the power of color. Our brand
-          colors are bold and recognizable to our users and must be cohesive
-          throughout all digital products to ensure brand integrity. Our color
-          palette consists of a core, primary palette, a secondary palette, and
-          tertiary palette. Use tints and shades where and when appropriate.
+          We believe in the power of color. A strong, recognizable color system creates consistency and enhances brand identity across all digital products. Our color palette consists of a core primary palette, a secondary palette, and a tertiary palette, with tints and shades used where appropriate.
         </p>
         <p>
-          The color palette below has been tested for color contrast and updated
-          to meet WCAG 1.4.3 (Color) Contrast Guidelines. These colors have been
-          specifically selected for digital use and may therefore vary from our
-          print style guide.
+          The color palette below has been tested for accessibility and meets WCAG 1.4.3 (Color Contrast) Guidelines. These colors have been specifically selected for digital use and may differ from print guidelines.
         </p>
         <h3>Primary Colors</h3>
         <div className="color-grid">

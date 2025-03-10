@@ -6,8 +6,7 @@ class Typography extends Component {
       <div className="typography">
         <h1 className="title">Typography</h1>
         <p>
-          Consistent typography styles unify all digital products by
-          Sherwin-Williams. Our primary digital typeface is Open Sans by
+          Consistent typography styles unify all digital products. Our primary digital typeface is Open Sans by
           Google–a crisp, readable typeface that is available in a variety of
           weights to create emphasis and visual interest on screen.
         </p>

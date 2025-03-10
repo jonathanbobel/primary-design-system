@@ -58,7 +58,7 @@ class Color_Poc extends Component {
           className="mb-2"
           href="https://www.w3schools.com/colors/colors_picker.asp?colorhex=0069af"
         >
-          Color Gradient for Sherwin Blue
+          Color Gradient for SW Blue
         </a>
         <h3 className="mt-3">Dynamic Brand Colors</h3>
         <div className="color_gradient">

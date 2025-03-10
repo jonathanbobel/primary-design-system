@@ -1,6 +1,7 @@
 {
   "name": "design-system",
   "version": "0.1.0",
+  "homepage": "/projects/design-system",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",

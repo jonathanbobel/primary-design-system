@@ -38,7 +38,7 @@ class Navigation extends Component {
   render() {
     return (
       <div>
-        <NavLink exact to="/">
+        <NavLink to="/">
           <img
             className="logo"
             alt="Primary Design System Logo"
@@ -49,12 +49,12 @@ class Navigation extends Component {
         <nav>
           <ul className="nav list-unstyled">
             <li className="single">
-              <NavLink exact to="/">
+              <NavLink to="/">
                 Welcome
               </NavLink>
             </li>
             <li className="single">
-              <NavLink exact to="/release">
+              <NavLink to="/release">
                 Release Notes
               </NavLink>
             </li>
@@ -62,9 +62,9 @@ class Navigation extends Component {
               <li>
                 <Toggle text={"Foundations"} />
                 <ul className="foundations" hidden>
-                  <li>
+                  {/* <li>
                     <NavLink to="/branding">Branding</NavLink>
-                  </li>
+                  </li> */}
                   <li>
                     <NavLink to="/colors">Colors</NavLink>
                   </li>

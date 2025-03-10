@@ -1,5 +1,6 @@
 import React from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import icons from "../../img/icons.svg";
 
 class CopyButton extends React.Component {
   constructor(props) {
@@ -40,7 +41,7 @@ class CopyButton extends React.Component {
             <div>
               <span>Click to Copy</span>
               <svg className="icon-svg clipboard">
-                <use xlinkHref="./img/icons.svg#clipboard" />
+                <use xlinkHref="../../img/icons.svg#clipboard" />
               </svg>
             </div>
           )}

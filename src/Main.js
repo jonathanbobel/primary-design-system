@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { Route, HashRouter as Router, Routes } from "react-router-dom";
 import ScrollToTop from "./Atomic_Elements/Molecules/ScrollToTop";
 import Home from "./Design_System/Main/Home";
 import Release from "./Design_System/Main/Release";
 import Overview from "./Design_System/Main/Overview";
 import SideNavigation from "./Design_System/Main/SideNavigation";
-import Branding from "./Design_System/Foundations/Branding";
+// import Branding from "./Design_System/Foundations/Branding";
 import Colors from "./Design_System/Foundations/Colors";
 import Color_Poc from "./Design_System/Foundations/Color_Poc";
 import Typography from "./Design_System/Foundations/Typography";
@@ -25,6 +25,7 @@ import Carousel from "./Design_System/Components/Carousel";
 import Tooltips from "./Design_System/Components/ToolTips";
 
 class Main extends Component {
+  // const [isSidebarOpen, setSidebarOpen] = useState(false);
   render() {
     return (
       <Router basename="/">
@@ -39,7 +40,7 @@ class Main extends Component {
                   <div className="w3-col l10">
                     <Routes>
                       <Route path="/" element={<Home />} />
-                      <Route path="/branding" element={<Branding />} />
+                      {/* <Route path="/branding" element={<Branding />} /> */}
                       <Route path="/release" element={<Release />} />
                       <Route path="/overview" element={<Overview />} />
                       <Route path="/buttons" element={<Buttons />} />
