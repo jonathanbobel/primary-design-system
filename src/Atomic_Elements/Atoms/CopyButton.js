@@ -34,14 +34,14 @@ class CopyButton extends React.Component {
             <div>
               <span>Copied</span>
               <svg className="icon-svg check">
-                <use xlinkHref="./img/icons.svg#check" />
+                <use xlinkHref={`${icons}#check`} />
               </svg>
             </div>
           ) : (
             <div>
               <span>Click to Copy</span>
               <svg className="icon-svg clipboard">
-                <use xlinkHref="../../img/icons.svg#clipboard" />
+                <use xlinkHref={`${icons}#clipboard`} />
               </svg>
             </div>
           )}
