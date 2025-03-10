@@ -1,0 +1,125 @@
+.pill {
+  display: inline-flex;
+  border: 1px solid $line-grey;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+  margin-right: 8px;
+  height: 34px;
+  &.hover {
+    background-color: $light-grey;
+    span {
+      text-decoration: underline;
+    }
+  }
+  span {
+    margin-right: 8px;
+    font-weight: 600;
+  }
+  svg {
+    width: 16px;
+    height: 16px;
+    use {
+      fill: $sw-blue;
+    }
+  }
+}
+
+.filter {
+  width: 200px;
+  .accordion {
+    h3 {
+      background: transparent;
+      border-bottom: 1px solid $line-grey;
+      button.accordion-trigger {
+        .accordion-title {
+          font-weight: 600;
+        }
+        min-width: 100%;
+        min-height: 44px;
+        padding: 8px 0;
+        svg {
+          use,
+          path {
+            fill: $sw-blue;
+          }
+        }
+        &[aria-expanded="true"] {
+          background: transparent;
+        }
+      }
+    }
+    .accordion-panel {
+      padding: 16px 0;
+      .form {
+        margin-bottom: 0;
+        .checkbox-container label,
+        .radio-container label {
+          font-size: em(14);
+          padding-left: 24px;
+          margin-bottom: 12px;
+          line-height: 1;
+          .checkmark {
+            width: 14px;
+            height: 14px;
+            &:after {
+              top: 1px;
+              left: 4px;
+              width: 4px;
+              height: 8px;
+              border-width: 0 2px 2px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid $line-grey;
+  padding: 8px 16px;
+  .filter {
+    margin-right: 16px;
+    .accordion {
+      margin-top: 0;
+    }
+  }
+  .results-container {
+    width: 100%;
+    min-height: 400px;
+    header {
+      border-bottom: 1px solid $line-grey;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 8px;
+      .selections {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      h4 {
+        font-size: em(18);
+        text-transform: capitalize;
+        margin-bottom: 0;
+        margin-right: 8px;
+      }
+      .pill {
+        margin: 0 8px;
+      }
+      .text-link {
+        align-self: center;
+        a.link {
+          margin-right: 0;
+        }
+      }
+    }
+    .results {
+      padding: 8px 16px;
+    }
+  }
+}

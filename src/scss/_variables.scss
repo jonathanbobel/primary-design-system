@@ -1,0 +1,88 @@
+// _variables.scss
+
+/* Primary */
+$sw-blue: #0069af;
+$sw-blue-05: darken($sw-blue, 5%);
+$sw-link: $sw-blue;
+$sw-header: $sw-blue;
+$sw-dark-grey: #222222;
+$white: #ffffff;
+$sw-light-grey: #eaeaea;
+
+/* Secondary */
+$mid-grey-01: #666666;
+$mid-grey-02: #999999;
+$line-grey: #cccccc;
+$light-grey: #f6f6f6;
+$light-blue: #f5fbfe;
+$dark-blue: #336699;
+$error-red: #da1c25;
+$success-green: #2d8700;
+$bright-blue: #33bbff;
+
+/* Tertiary */
+$dark-red: #992222;
+$burnt-orange: #cd4921;
+$mustard: #e2a504;
+$teal: #19738a;
+$purple: #714f8f;
+$light-green: #14a880;
+
+/* Color POC */
+
+$grey-90: hsl(0, 0%, 10%);
+$grey-80: hsl(0, 0%, 20%);
+$grey-70: hsl(0, 0%, 30%);
+$grey-40: hsl(0, 0%, 60%);
+$grey-20: hsl(0, 0%, 80%);
+$grey-10: hsl(0, 0%, 90%);
+$grey-05: hsl(0, 0%, 95%);
+
+$line-grey: $grey-20;
+
+$blue-90: #002b47; // hsl(204, 100%, 14%)
+$blue-80: #00497a; // hsl(204, 100%, 24%)
+$blue-70: #0069af; // hsl(204, 100%, 34%)
+$blue-60: #0087e0; // hsl(204, 100%, 44%)
+$blue-40: #47b5ff; // hsl(204, 100%, 64%)
+$blue-20: #addfff; // hsl(204, 100%, 84%)
+$blue-05: #f5fbff; // hsl(204, 100%, 98%)
+
+$brand: #ff6600;
+$brand: purple;
+//$brand: lightsalmon;
+$brand: olive;
+$brand-light-20: lighten($brand, 20%);
+$brand-light-40: lighten($brand, 40%);
+$brand-dark-10: darken($brand, 10%);
+$brand-dark-20: darken($brand, 20%);
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+
+$open-sans: "Open Sans", Arial, sans-serif;

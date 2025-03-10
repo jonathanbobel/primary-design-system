@@ -1,0 +1,85 @@
+body,
+html {
+  font-size: 16px;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p,
+input {
+  font-family: $open-sans;
+  margin: 0;
+}
+
+h1,
+.h1 {
+  font-size: em(44);
+  line-height: 56px;
+  font-weight: 300;
+  &.title {
+    line-height: em(56);
+  }
+}
+h2,
+.h2 {
+  font-size: em(32);
+  line-height: 48px;
+  font-weight: 700;
+}
+h3,
+.h3 {
+  font-size: em(28);
+  line-height: 32px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+h4,
+.h4 {
+  font-size: em(24);
+  line-height: 32px;
+  font-weight: normal;
+}
+h5,
+.h5 {
+  font-size: em(18);
+  line-height: 24px;
+  font-weight: 700;
+}
+h6,
+.h6 {
+  font-size: em(16);
+  line-height: 16px;
+  letter-spacing: 1.75px;
+  font-weight: 700;
+  text-transform: uppercase;
+  &.separator {
+    margin-bottom: 24px;
+    &:before {
+      display: inline-block;
+      content: "";
+      background: $bright-blue;
+      height: 4px;
+      width: 45px;
+      padding-right: 5px;
+      margin-right: 15px;
+      margin-bottom: 2px;
+    }
+  }
+}
+p {
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+p.intro {
+  font-size: em(22);
+}

@@ -1,0 +1,321 @@
+// Release Page
+
+.release-notes {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+
+  .release-number {
+    margin-right: 16px;
+  }
+
+  .release-desc {
+    font-weight: bold;
+    flex-direction: column;
+  }
+}
+
+// Branding Page
+
+.branding {
+  padding: 0;
+  .w3-row {
+    align-items: flex-start;
+    .w3-col {
+      margin-right: 24px;
+      h2 {
+        line-height: 1.4;
+      }
+      .img-container {
+        border: 1px solid $line-grey;
+        padding: 0 16px;
+        min-height: 200px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.5em;
+        img {
+          display: flex;
+          align-self: center;
+          width: 100%;
+          height: auto;
+          padding: 1em 0;
+          &.turnt {
+            transform: rotate(-10deg);
+          }
+        }
+      }
+      p.caption {
+        font-size: em(12);
+        margin: 0.5em 0 2em;
+      }
+      .border-top {
+        flex-direction: column;
+        min-height: 300px;
+        .img-inner {
+          display: flex;
+          align-items: center;
+          &:first-child {
+            border-bottom: 1px solid $line-grey;
+            min-height: 150px;
+          }
+          &:last-child {
+            min-height: 200px;
+            img {
+              padding: 5em 0;
+            }
+          }
+        }
+        img {
+          padding: 2em 0;
+        }
+        &--green {
+          border-top: 4px solid $success-green !important;
+        }
+        &--red {
+          border-top: 4px solid $error-red !important;
+        }
+      }
+      .do,
+      .dont {
+        display: flex;
+        align-items: center;
+        font-size: em(28);
+        color: $success-green;
+        margin-bottom: 0;
+        svg {
+          width: 32px;
+          height: 32px;
+          margin-top: -4px;
+          use {
+            fill: $success-green;
+          }
+        }
+      }
+      .dont {
+        color: $error-red;
+        svg {
+          margin-top: 0;
+          use {
+            fill: $error-red;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Color Page
+
+.color-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .color-card {
+    box-shadow: 0 0 5px $mid-grey-02;
+    width: 144px;
+    margin: 0 3em 3em 0;
+    .color {
+      width: 144px;
+      height: 144px;
+    }
+    .color-desc {
+      padding: 1em 0.5em;
+      p {
+        margin-bottom: 0.2em;
+      }
+    }
+  }
+}
+
+// Typography
+
+.typography {
+  button {
+    margin: 0.5em 0 3em;
+  }
+  .font-container {
+    padding: 16px;
+    box-shadow: 0 0 5px $mid-grey-02;
+    margin-bottom: 1em;
+    max-width: 500px;
+    word-wrap: break-word;
+    p {
+      margin-bottom: 0.1em;
+      letter-spacing: 2px;
+    }
+  }
+  .font-weight-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    div {
+      box-shadow: 0 0 5px $mid-grey-02;
+      width: 128px;
+      margin: 0 24px 32px 0;
+      p:first-child {
+        height: 128px;
+        font-size: em(48);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid $mid-grey-02;
+        margin-bottom: 0.1em;
+      }
+      p:last-child {
+        padding: 0 0 0 0.5em;
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+  .text-styles {
+    margin-bottom: 32px;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      line-height: 1;
+      margin-bottom: 0;
+    }
+    h1 {
+      font-size: em(44);
+      font-weight: 300;
+    }
+    h2 {
+      font-size: em(36);
+      font-weight: 700;
+    }
+    h3 {
+      font-size: em(28);
+      font-weight: 300;
+    }
+    h4 {
+      font-size: em(24);
+    }
+    h5 {
+      font-size: em(18);
+      font-weight: 700;
+    }
+    h6 {
+      font-size: em(16);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+    }
+    p {
+      margin-bottom: 0;
+      &.body-intro {
+        font-size: em(22);
+        font-weight: 300;
+      }
+      &.filter-title {
+        font-size: em(14);
+        font-weight: 600;
+      }
+      &.table-copy {
+        font-size: em(24);
+        font-weight: 300;
+      }
+      &.error-text {
+        color: $error-red;
+        font-style: italic;
+        font-weight: 600;
+      }
+      &.caption {
+        font-size: em(12);
+      }
+    }
+    &.tablet {
+      h1 {
+        font-size: em(38);
+      }
+      h2 {
+        font-size: em(28);
+      }
+      h3 {
+        font-size: em(24);
+      }
+      h4 {
+        font-size: em(20);
+      }
+      h5 {
+        font-size: em(16);
+      }
+      h6 {
+        font-size: em(14);
+      }
+      p {
+        font-size: em(14);
+        &.body-intro {
+          font-size: em(19);
+        }
+        &.filter-title {
+          font-size: em(12);
+        }
+        &.table-copy {
+          font-size: em(12);
+        }
+        &.caption {
+          font-size: em(11);
+        }
+      }
+      a {
+        font-size: em(14);
+      }
+    }
+    &.mobile {
+      h1 {
+        font-size: em(28);
+      }
+      h2 {
+        font-size: em(24);
+      }
+      h3 {
+        font-size: em(20);
+      }
+      h4 {
+        font-size: em(18);
+      }
+      h5 {
+        font-size: em(14);
+      }
+      h6 {
+        font-size: em(12);
+      }
+      p {
+        font-size: em(12);
+        &.body-intro {
+          font-size: em(16);
+        }
+        &.filter-title {
+          font-size: em(12);
+        }
+        &.table-copy {
+          font-size: em(12);
+        }
+        &.caption {
+          font-size: em(10);
+        }
+      }
+      a {
+        font-size: em(10);
+      }
+    }
+    .w3-row {
+      margin: 0;
+      border-bottom: 1px solid $line-grey;
+      &.last {
+        border-bottom: 0;
+        min-height: 120px;
+        margin-bottom: 48px;
+      }
+      .w3-col {
+        min-height: 80px;
+        padding: 8px 8px 8px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+}

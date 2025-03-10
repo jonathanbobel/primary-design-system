@@ -1,0 +1,135 @@
+.form,
+form {
+  margin-bottom: 20px;
+}
+
+.input-container,
+.select-container {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  label {
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  input,
+  select {
+    height: 40px;
+    margin-bottom: 24px;
+    padding: 8px;
+    width: 300px;
+    border: 1px solid $line-grey;
+    outline: 0;
+    &:focus {
+      border: 1px solid $sw-blue;
+      box-shadow: 0 0 5px $sw-blue;
+    }
+    &.error {
+      border: 2px solid $error-red;
+      box-shadow: 0 0 5px $error-red;
+      & ~ span {
+        font-size: em(12);
+        color: $error-red;
+        margin-top: 8px;
+        font-style: italic;
+      }
+    }
+  }
+  select {
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent url(down.svg) no-repeat right 5px center;
+    background-size: 15px;
+  }
+}
+.checkbox-container,
+.radio-container {
+  label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover input ~ .checkmark,
+    &:checked {
+      background-color: $light-grey;
+    }
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      &:checked ~ .checkmark:after {
+        display: block;
+      }
+      &:checked ~ .checkmark {
+        background-color: $mid-grey-01;
+      }
+    }
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      border: 1px solid $line-grey;
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      &:after {
+        left: 8px;
+        top: 4px;
+        width: 7px;
+        height: 13px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+.radio-container label {
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    &:after {
+      top: 6px;
+      left: 6px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: white;
+    }
+  }
+}
+#state {
+  width: 80px;
+}
+#zip {
+  width: 115px;
+}
+.notification {
+  font-weight: 600;
+}
+
+.alert {
+  color: $error-red;
+  padding: 0;
+  font-size: 0.8em;
+}

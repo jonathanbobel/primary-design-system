@@ -1,0 +1,200 @@
+.react-tabs {
+  border: 1px solid $line-grey;
+  margin-bottom: 2em;
+  clear: both;
+  &__tab-list {
+    display: flex;
+    position: relative;
+    z-index: 100;
+    border-bottom: 1px solid $line-grey;
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+  }
+  .button-container {
+    margin-bottom: 0;
+  }
+  &__tab {
+    background: white;
+    color: $sw-blue;
+    border: none;
+    font-size: em(14);
+    outline: 0;
+    bottom: 0;
+    margin-right: 10px;
+    padding: 1em 2em;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid transparent;
+    &:hover,
+    &:focus,
+    &[aria-selected="true"] {
+      box-shadow: none;
+      color: black;
+      background: white;
+      border-bottom: 4px solid $bright-blue;
+      cursor: pointer;
+    }
+    &:focus {
+      outline: 5px auto -webkit-focus-ring-color;
+      border-bottom: 4px solid $bright-blue;
+    }
+    &--disabled:hover {
+      border-bottom: 0;
+    }
+  }
+  .show-code {
+    padding-bottom: 0;
+    min-height: auto;
+    position: absolute;
+    min-width: auto;
+    padding: 0;
+    height: 100%;
+    width: auto;
+    align-self: center;
+    margin-right: 0;
+    right: 0;
+    display: flex;
+    button {
+      background: none;
+      border: 0;
+      color: $sw-blue;
+      font-size: em(12);
+      padding: 0 1em;
+      min-height: 35px;
+      min-width: auto;
+      align-self: center;
+      outline: 0;
+      margin-right: 1em;
+    }
+    &.disabled &:hover {
+      border-bottom: 4px solid transparent;
+    }
+    span {
+      border-bottom: 1px solid $sw-blue;
+      &:hover {
+        border-bottom: 1px solid transparent;
+      }
+    }
+    svg {
+      width: 30px;
+      height: 30px;
+      margin-left: 5px;
+      use {
+        fill: $sw-blue;
+      }
+      &.check {
+        transition: opacity 0.5s;
+        transition-delay: 2.5s;
+        opacity: 0;
+        use {
+          fill: $success-green;
+        }
+      }
+    }
+  }
+  &__tab-panel {
+    //min-height: 200px;
+    overflow: hidden;
+    position: relative;
+    //background: $light-grey;
+    display: none;
+    &--selected {
+      display: block;
+    }
+    pre {
+      padding: 1em !important;
+      //background: none !important;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.tabbed {
+  border: 1px solid $sw-dark-grey;
+  [role="tablist"] {
+    padding: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid $sw-dark-grey;
+    margin-bottom: 0;
+  }
+
+  [role="tablist"] li,
+  [role="tablist"] a {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    flex-grow: 1;
+    height: 100%;
+    justify-content: center;
+    font-weight: 600;
+  }
+
+  [role="tablist"] a {
+    text-decoration: none;
+    padding: 0.5rem 1em;
+    border-bottom: 4px solid transparent;
+    color: $sw-blue;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  [role="tablist"] {
+    [aria-selected] {
+      background: #fff;
+      border-bottom: 4px solid $bright-blue;
+      color: black;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  [role="tabpanel"] {
+    padding: 1.5rem;
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  [role="tabpanel"] * + * {
+    margin-top: 0.75rem;
+  }
+
+  *:focus {
+    //outline: none;
+  }
+
+  @media (max-width: 550px) {
+    [role="tablist"] li,
+    [role="tablist"] a {
+      display: block;
+      position: static;
+    }
+
+    [role="tablist"] a {
+      //border: 2px solid #222 !important;
+    }
+
+    [role="tablist"] li + li a {
+      border-top: 0 !important;
+    }
+
+    [role="tablist"] [aria-selected] {
+      position: static;
+    }
+
+    [role="tablist"] [aria-selected]::after {
+      content: "\0020⬅";
+    }
+
+    [role="tabpanel"] {
+      border-top: 0;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+nav.utility {
+  background: $light-grey;
+  display: flex;
+  flex-direction: row;
+  font-size: em(12);
+  font-weight: 400;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 1em;
+  height: 40px;
+  .location,
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+      width: 30px;
+      margin-right: 1em;
+    }
+    span {
+      padding-right: 1em;
+      &.divider {
+        padding-right: 0;
+        &:after {
+          content: "|";
+          padding: 0 1em;
+        }
+      }
+    }
+    svg {
+      width: 15px;
+      height: 15px;
+      margin-right: 0.5em;
+      use {
+        fill: $sw-dark-grey;
+      }
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      margin: 0;
+      height: 100%;
+
+      li {
+        display: flex;
+        padding: 0 1em;
+        border-left: 1px solid $sw-light-grey;
+        align-items: center;
+
+        a {
+          color: $sw-dark-grey;
+          display: flex;
+        }
+      }
+    }
+  }
+  .location {
+    a {
+      color: $sw-dark-grey;
+      &:hover {
+        color: $sw-dark-grey;
+      }
+      svg {
+        margin-left: 0.5em;
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+footer {
+  background: $sw-light-grey;
+  .footer-top {
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+    padding: 1em;
+    .share {
+      display: flex;
+      margin-left: 5em;
+      svg {
+        width: 24px;
+        height: 24px;
+        margin-right: 0.5em;
+        use {
+          fill: white;
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    padding: 5em 2.5em 2.5em;
+    .row {
+      justify-content: space-between;
+    }
+    .copyright {
+      a,
+      p {
+        margin-bottom: 1em;
+        font-weight: 600;
+        display: block;
+      }
+    }
+    ul {
+      li {
+        list-style: none;
+        padding: 0 0 1em;
+        font-weight: 600;
+      }
+      &.terms {
+        li {
+          font-size: em(12);
+        }
+      }
+    }
+  }
+}

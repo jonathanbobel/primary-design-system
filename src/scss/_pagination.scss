@@ -1,0 +1,93 @@
+.pagination {
+  padding: 8px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: em(14);
+  &.bottom {
+    border-top: 1px solid $line-grey;
+    padding: 16px 0;
+  }
+  .details-list {
+    span {
+      font-weight: bold;
+      margin-right: 16px;
+    }
+  }
+  .select-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    span {
+      font-size: em(18);
+      margin-right: 8px;
+    }
+    select {
+      width: 100px;
+      font-weight: 600;
+      font-size: em(16);
+      margin-right: 16px;
+      margin-bottom: 0;
+    }
+  }
+  .pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-end;
+    font-size: em(16);
+    span {
+      font-weight: 700;
+      margin: 0 4px;
+      &.ellipsis {
+        font-weight: 400;
+      }
+    }
+    button {
+      background-color: transparent;
+      border: 2px solid $sw-blue;
+      width: 40px;
+      min-height: 40px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 4px;
+      svg {
+        width: 16px;
+        height: 16px;
+        use,
+        path {
+          fill: $sw-blue;
+        }
+      }
+      &.disabled {
+        border-color: $mid-grey-01;
+        cursor: default;
+        &:hover {
+          background-color: white;
+        }
+        svg {
+          use,
+          path {
+            fill: $mid-grey-01;
+          }
+        }
+      }
+      &.next {
+        margin-left: 4px;
+      }
+    }
+    a {
+      color: $sw-blue;
+      margin: 0 4px;
+    }
+  }
+  .showing {
+    font-size: em(18);
+    margin-bottom: 24px;
+  }
+}

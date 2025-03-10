@@ -1,0 +1,74 @@
+.color_gradient {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  .color_block {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      color: white;
+      &.dark {
+        color: black;
+      }
+    }
+    &.grey-90 {
+      background-color: $grey-90;
+    }
+    &.grey-80 {
+      background-color: $grey-80;
+    }
+    &.grey-70 {
+      background-color: $grey-70;
+    }
+    &.grey-40 {
+      background-color: $grey-40;
+    }
+    &.grey-20 {
+      background-color: $grey-20;
+    }
+    &.grey-10 {
+      background-color: $grey-10;
+    }
+    &.grey-05 {
+      background-color: $grey-05;
+    }
+    &.blue-90 {
+      background-color: $blue-90;
+    }
+    &.blue-80 {
+      background-color: $blue-80;
+    }
+    &.blue-70 {
+      background-color: $blue-70;
+    }
+    &.blue-60 {
+      background-color: $blue-60;
+    }
+    &.blue-40 {
+      background-color: $blue-40;
+    }
+    &.blue-20 {
+      background-color: $blue-20;
+    }
+    &.blue-05 {
+      background-color: $blue-05;
+    }
+    &.brand {
+      background-color: $brand;
+    }
+    &.brand-light-20 {
+      background-color: $brand-light-20;
+    }
+    &.brand-light-40 {
+      background-color: $brand-light-40;
+    }
+    &.brand-dark-10 {
+      background-color: $brand-dark-10;
+    }
+    &.brand-dark-20 {
+      background-color: $brand-dark-20;
+    }
+  }
+}

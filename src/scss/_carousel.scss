@@ -1,0 +1,61 @@
+.carousel {
+  padding: 64px 0 64px 64px;
+  display: flex;
+  flex-direction: row;
+  background: $light-blue;
+  margin-bottom: 32px;
+  .carousel-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .carousel-cards-container {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      .cards {
+        margin: 0 8px;
+        border-color: $dark-red;
+      }
+    }
+    .carousel-controls {
+      margin: 32px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: 100%;
+      span {
+        margin: 0 0.5em;
+        display: flex;
+        svg {
+          width: 20px;
+          height: 20px;
+          use,
+          path {
+            fill: $sw-blue;
+          }
+          &.disabled {
+            use,
+            path {
+              fill: $mid-grey-02;
+            }
+          }
+        }
+      }
+      .dot {
+        height: 15px;
+        width: 15px;
+        border: 2px solid $sw-blue;
+        border-radius: 50%;
+        display: inline-block;
+        &.active {
+          background: $sw-blue;
+        }
+      }
+    }
+    button.secondary {
+      align-self: center;
+      margin-bottom: 4px;
+    }
+  }
+}

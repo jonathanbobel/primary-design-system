@@ -1,0 +1,9 @@
+@import "./scss/variables";
+@import "./scss/mixins";
+@import "./scss/layout";
+@import "./scss/buttons";
+@import "./scss/forms";
+
+* {
+  font-family: $open-sans;
+}

@@ -1,0 +1,104 @@
+.casestudy {
+  padding: 40px 64px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 24px;
+  background: $light-blue;
+  .casestudy-container {
+    position: relative;
+    .media-container {
+      width: 767px;
+      position: relative;
+      margin-bottom: 24px;
+      img {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+      }
+      svg {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 64px;
+        height: 64px;
+        z-index: 2;
+        use,
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
+  .studies {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    top: 32px;
+    flex-direction: column;
+    background: white;
+    width: 420px;
+    transform: translate(170%, 0%);
+    @include box-shadow;
+    .study-container {
+      border-bottom: 1px solid $line-grey;
+      img {
+        width: auto;
+        height: 100px;
+        margin: 0 1em 0 0;
+      }
+      padding: 1em;
+      display: flex;
+      flex-direction: row;
+      .caption {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        p {
+          margin: 0;
+        }
+        h5 {
+          color: $sw-blue;
+          font-weight: 600;
+          font-size: em(18);
+          margin-top: 0;
+        }
+      }
+    }
+    &.card {
+      top: -48px;
+      width: 500px;
+      transform: translate(120%, 0%);
+      border-top: 8px solid $dark-red;
+      padding: 32px 40px;
+      h4 {
+        color: $sw-blue;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  h3 {
+    font-weight: 700;
+  }
+  p.caption,
+  p.intro {
+    max-width: 60%;
+    @include bp(xl) {
+      max-width: 70%;
+    }
+  }
+  &.featured {
+    margin-bottom: 136px;
+    p.caption,
+    p.intro {
+      max-width: 50%;
+    }
+  }
+}

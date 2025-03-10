@@ -1,0 +1,114 @@
+// Icons
+
+.icon-grid {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+  flex-wrap: wrap;
+  max-width: 1200px;
+
+  .icon-container {
+    width: 128px;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    flex-direction: column;
+    align-items: center;
+    .svg-container {
+      width: 128px;
+      height: 144px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      button:hover {
+        span,
+        svg {
+          display: block;
+          opacity: 1;
+        }
+      }
+      button {
+        min-width: 100%;
+        min-height: 100%;
+        overflow: hidden;
+        position: absolute;
+        background: none;
+        left: 0;
+        bottom: 0;
+        transition: all 1s ease;
+        outline: 0;
+        background: linear-gradient(
+          to bottom,
+          transparent 90%,
+          $success-green 10%
+        );
+        background-size: 100% 200%;
+        background-position: center top;
+        div {
+          display: flex;
+          flex-direction: row;
+          position: absolute;
+          bottom: 5px;
+          left: 0;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+        span {
+          font-size: em(12);
+          color: black;
+          opacity: 1;
+        }
+        span,
+        svg {
+          opacity: 0;
+          display: none;
+        }
+        &.copied {
+          opacity: 1;
+          background-position: center bottom;
+          transition: all 0.2s ease;
+          svg,
+          span {
+            display: block;
+            opacity: 1;
+          }
+          span {
+            color: white;
+          }
+          svg use {
+            fill: white !important;
+          }
+        }
+        svg {
+          margin-top: -3px;
+          width: 24px;
+          height: 24px;
+          use {
+            fill: black;
+          }
+        }
+      }
+    }
+    p {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      text-align: center;
+      margin: 0.5em 0;
+    }
+    // &:hover {
+    //   // @include box-shadow;
+    //   .svg-container {
+    //     background-color: $bright-blue;
+    //   }
+    //   svg use {
+    //     fill: white;
+    //   }
+    // }
+  }
+  svg {
+    width: 64px;
+    height: 64px;
+  }
+}

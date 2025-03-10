@@ -1,0 +1,127 @@
+#sidebar div {
+  min-width: 250px;
+  max-width: 250px;
+  color: #fff;
+  transition: all 0.3s;
+  border-right: 1px solid $line-grey;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &.active {
+    margin-left: -250px;
+  }
+
+  .logo {
+    width: 100%;
+    padding: 2em 4em;
+  }
+
+  input {
+    height: 40px;
+    padding-left: 0.5em;
+    margin: 0 6%;
+    width: 88%;
+    box-sizing: border-box;
+  }
+
+  nav {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+  }
+
+  ul p {
+    color: #fff;
+    padding: 10px;
+  }
+
+  ul {
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
+    &.active {
+      background: $light-grey;
+    }
+    li {
+      width: 100%;
+      button {
+        background: none;
+        color: $sw-dark-grey;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        width: 100%;
+        font-weight: normal;
+        span:first-child {
+          padding-left: 8px;
+        }
+        &:hover {
+          background: $sw-light-grey;
+        }
+        &.toggle {
+          background: $light-grey;
+          + ul {
+            transition-duration: 0.3s;
+            display: block !important;
+            background: $light-grey;
+
+            &.foundations {
+              a.active {
+                border-left: 8px solid $bright-blue;
+              }
+            }
+            &.components {
+              a.active {
+                border-left: 8px solid $error-red;
+              }
+            }
+          }
+          svg {
+            transform: rotate(-180deg);
+          }
+        }
+        span {
+          svg {
+            transition-duration: 0.3s;
+            width: 14px;
+            height: 16px;
+          }
+        }
+      }
+      a {
+        font-size: 1em;
+        padding: 1em;
+        display: block;
+        text-decoration: none;
+        font-weight: 400;
+        color: $sw-dark-grey;
+        border-left: 8px solid transparent;
+        &:hover {
+          font-weight: 700;
+          background: $sw-light-grey;
+        }
+        &.active,
+        &[aria-expanded="true"] {
+          font-weight: 700;
+          background: $light-grey;
+          border-left: 8px solid $dark-blue;
+        }
+      }
+      ul li a {
+        padding: 1em 1em 1em 2em;
+      }
+    }
+  }
+
+  ul li > ul ul a {
+    font-size: 0.8em !important;
+    font-weight: 400 !important;
+    padding: 0.5em 0 0.5em 0.5em !important;
+  }
+}

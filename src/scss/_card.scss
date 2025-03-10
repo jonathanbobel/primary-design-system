@@ -1,0 +1,167 @@
+.cards {
+  background: white;
+  border-top: 8px solid $sw-blue;
+  width: 330px;
+  height: 360px;
+  padding: 16px;
+  position: relative;
+  @include box-shadow;
+  margin-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  img,
+  video,
+  button,
+  .media-container svg {
+    display: none;
+  }
+  h2 {
+    max-width: 70%;
+  }
+  h4 {
+    color: $sw-blue;
+    font-weight: 300;
+    margin-bottom: 32px;
+    flex-grow: 1;
+  }
+  &.img-only {
+    border-top: 0;
+    h3,
+    h4,
+    p {
+      display: none;
+    }
+    img {
+      height: 240px;
+    }
+    .caption {
+      margin: 8px 24px;
+      display: flex;
+      font-size: em(12);
+      font-style: italic;
+    }
+  }
+  &.img img,
+  &.img-small img,
+  &.video img,
+  &.video-small img,
+  &.button button,
+  &.carousel-card button,
+  &.video .media-container svg,
+  &.video-small .media-container svg {
+    display: block;
+  }
+  .media-container svg {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 64px;
+    height: 64px;
+    z-index: 2;
+    use,
+    path {
+      fill: white;
+    }
+  }
+  &.img,
+  &.video {
+    height: 580px;
+    width: 775px;
+    padding: 16px 24px;
+    p {
+      width: 430px;
+      font-size: em(22);
+      margin-bottom: 64px;
+      flex-grow: 0;
+    }
+  }
+  &.img {
+    border-top: none;
+    h4 {
+      display: none;
+    }
+    .media-container {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 85%;
+      height: 480px;
+      overflow: hidden;
+      transform: translate(80%, 0%);
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &.img-small,
+  &.video-small {
+    height: auto;
+    padding: 0;
+    h4,
+    h3,
+    p {
+      margin-top: 0;
+      padding: 0 24px;
+      &.date {
+        font-size: em(16);
+        color: $mid-grey-01;
+      }
+    }
+    h6 {
+      padding: 32px 0 0 24px;
+    }
+    .media-container {
+      position: relative;
+    }
+    img,
+    video {
+      position: relative;
+      width: 100%;
+    }
+  }
+  &.video {
+    border-top: 8px solid $burnt-orange;
+    .media-container {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 600px;
+      height: 450px;
+      transform: translate(90%, 0%);
+    }
+  }
+  h3 {
+    color: $sw-blue;
+    font-weight: 300;
+    margin: 1em 0;
+  }
+  p {
+    &.date {
+      flex-grow: 0;
+      margin-bottom: 24px;
+      color: $mid-grey-01;
+    }
+  }
+  button {
+    align-self: flex-start;
+  }
+
+  &.carousel-card {
+    border: 0;
+    box-shadow: 0 0 0 #fff;
+    background: transparent;
+    margin-bottom: 0;
+    min-height: 450px;
+    p {
+      width: 200px;
+      margin-bottom: 32px;
+    }
+  }
+}

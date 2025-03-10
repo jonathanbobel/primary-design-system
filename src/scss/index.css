@@ -26,6 +26,287 @@
   src: url("/fonts/OpenSans-ExtraBold.ttf") format("truetype");
   font-weight: 800; }
 
+.button-container {
+  width: 100%;
+  padding: 1em;
+  display: inline-flex;
+  box-shadow: 0 0 5px #999999; }
+
+.button-container-dark {
+  background: #eaeaea; }
+
+.text-link {
+  display: inline-flex;
+  align-items: center; }
+
+.text-link svg {
+  width: 30px;
+  height: 30px; }
+
+.text-link svg use,
+.text-link svg path {
+  fill: #0069af; }
+
+.text-link a {
+  margin-right: 2em;
+  display: inline-flex;
+  color: #0069af;
+  text-decoration: none;
+  border-bottom: 1px solid transparent; }
+
+.text-link a:hover {
+  border-bottom: 1px solid #0069af; }
+
+button,
+a.button {
+  background: #0069af;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  min-height: 56px;
+  padding: 8px 24px;
+  cursor: pointer;
+  border: 0; }
+
+button:hover,
+a.button:hover {
+  background: #005a96; }
+
+button.primary,
+a.button.primary {
+  background: white;
+  color: #0069af;
+  border: none;
+  border: 2px solid white; }
+
+button.primary:hover,
+a.button.primary:hover {
+  border: 2px solid #0069af;
+  background: white;
+  color: #0069af; }
+
+button.secondary,
+a.button.secondary {
+  background: white;
+  color: #0069af;
+  border: 2px solid #0069af; }
+
+button.secondary:hover,
+a.button.secondary:hover {
+  background: #0069af;
+  color: white; }
+
+button.disabled,
+a.button.disabled {
+  background: #999999; }
+
+button.disabled:hover,
+a.button.disabled:hover {
+  background: #666666; }
+
+button.update,
+a.button.update {
+  background: #222222; }
+
+a.button {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center; }
+
+.form,
+form {
+  margin-bottom: 20px; }
+
+.form .input-container,
+.form .select-container,
+form .input-container,
+form .select-container {
+  display: flex;
+  flex-direction: column;
+  line-height: 1; }
+
+.form .input-container label,
+.form .select-container label,
+form .input-container label,
+form .select-container label {
+  font-weight: 400;
+  margin-bottom: 8px; }
+
+.form .input-container input,
+.form .input-container select,
+.form .select-container input,
+.form .select-container select,
+form .input-container input,
+form .input-container select,
+form .select-container input,
+form .select-container select {
+  height: 40px;
+  margin-bottom: 24px;
+  padding: 8px;
+  width: 300px;
+  border: 1px solid #cccccc;
+  outline: 0; }
+
+.form .input-container input:focus,
+.form .input-container select:focus,
+.form .select-container input:focus,
+.form .select-container select:focus,
+form .input-container input:focus,
+form .input-container select:focus,
+form .select-container input:focus,
+form .select-container select:focus {
+  border: 1px solid #0069af;
+  box-shadow: 0 0 5px #0069af; }
+
+.form .input-container input.error,
+.form .input-container select.error,
+.form .select-container input.error,
+.form .select-container select.error,
+form .input-container input.error,
+form .input-container select.error,
+form .select-container input.error,
+form .select-container select.error {
+  border: 2px solid #da1c25;
+  box-shadow: 0 0 5px #da1c25; }
+
+.form .input-container input.error ~ span,
+.form .input-container select.error ~ span,
+.form .select-container input.error ~ span,
+.form .select-container select.error ~ span,
+form .input-container input.error ~ span,
+form .input-container select.error ~ span,
+form .select-container input.error ~ span,
+form .select-container select.error ~ span {
+  font-size: 0.75em;
+  color: #da1c25;
+  margin-top: 8px;
+  font-style: italic; }
+
+.form .input-container select,
+.form .select-container select,
+form .input-container select,
+form .select-container select {
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent url(down.svg) no-repeat right 5px center;
+  background-size: 15px; }
+
+.form .checkbox-container label,
+.form .radio-container label,
+form .checkbox-container label,
+form .radio-container label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.form .checkbox-container label:hover input ~ .checkmark, .form .checkbox-container label:checked,
+.form .radio-container label:hover input ~ .checkmark,
+.form .radio-container label:checked,
+form .checkbox-container label:hover input ~ .checkmark,
+form .checkbox-container label:checked,
+form .radio-container label:hover input ~ .checkmark,
+form .radio-container label:checked {
+  background-color: #f6f6f6; }
+
+.form .checkbox-container label input,
+.form .radio-container label input,
+form .checkbox-container label input,
+form .radio-container label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; }
+
+.form .checkbox-container label input:checked ~ .checkmark:after,
+.form .radio-container label input:checked ~ .checkmark:after,
+form .checkbox-container label input:checked ~ .checkmark:after,
+form .radio-container label input:checked ~ .checkmark:after {
+  display: block; }
+
+.form .checkbox-container label input:checked ~ .checkmark,
+.form .radio-container label input:checked ~ .checkmark,
+form .checkbox-container label input:checked ~ .checkmark,
+form .radio-container label input:checked ~ .checkmark {
+  background-color: #666666; }
+
+.form .checkbox-container label .checkmark,
+.form .radio-container label .checkmark,
+form .checkbox-container label .checkmark,
+form .radio-container label .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 1px solid #cccccc; }
+
+.form .checkbox-container label .checkmark:after,
+.form .radio-container label .checkmark:after,
+form .checkbox-container label .checkmark:after,
+form .radio-container label .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+.form .checkbox-container label .checkmark:after,
+.form .radio-container label .checkmark:after,
+form .checkbox-container label .checkmark:after,
+form .radio-container label .checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 7px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.form .radio-container label .checkmark,
+form .radio-container label .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%; }
+
+.form .radio-container label .checkmark:after,
+form .radio-container label .checkmark:after {
+  top: 6px;
+  left: 6px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: white; }
+
+.form #state,
+form #state {
+  width: 80px; }
+
+.form #zip,
+form #zip {
+  width: 115px; }
+
+.form .notification,
+form .notification {
+  font-weight: 600; }
+
+.alert {
+  color: #da1c25;
+  padding: 0;
+  font-size: 0.8em; }
+
 body,
 html {
   font-size: 16px; }
@@ -2858,286 +3139,15 @@ code {
   display: flex;
   flex-direction: column; }
 
-.button-container {
-  width: 100%;
-  padding: 1em;
-  display: inline-flex;
-  box-shadow: 0 0 5px #999999; }
-
-.button-container-dark {
-  background: #eaeaea; }
-
-.text-link {
-  display: inline-flex;
-  align-items: center; }
-
-.text-link svg {
-  width: 30px;
-  height: 30px; }
-
-.text-link svg use,
-.text-link svg path {
-  fill: #0069af; }
-
-.text-link a {
-  margin-right: 2em;
-  display: inline-flex;
-  color: #0069af;
-  text-decoration: none;
-  border-bottom: 1px solid transparent; }
-
-.text-link a:hover {
-  border-bottom: 1px solid #0069af; }
-
-button,
-a.button {
-  background: #0069af;
-  color: white;
-  font-size: 1em;
-  font-weight: bold;
-  min-height: 56px;
-  padding: 8px 24px;
-  cursor: pointer;
-  border: 0; }
-
-button:hover,
-a.button:hover {
-  background: #005a96; }
-
-button.primary,
-a.button.primary {
-  background: white;
-  color: #0069af;
-  border: none;
-  border: 2px solid white; }
-
-button.primary:hover,
-a.button.primary:hover {
-  border: 2px solid #0069af;
-  background: white;
-  color: #0069af; }
-
-button.secondary,
-a.button.secondary {
-  background: white;
-  color: #0069af;
-  border: 2px solid #0069af; }
-
-button.secondary:hover,
-a.button.secondary:hover {
-  background: #0069af;
-  color: white; }
-
-button.disabled,
-a.button.disabled {
-  background: #999999; }
-
-button.disabled:hover,
-a.button.disabled:hover {
-  background: #666666; }
-
-button.update,
-a.button.update {
-  background: #222222; }
-
-a.button {
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center; }
-
-.form,
-form {
-  margin-bottom: 20px; }
-
-.form .input-container,
-.form .select-container,
-form .input-container,
-form .select-container {
-  display: flex;
-  flex-direction: column;
-  line-height: 1; }
-
-.form .input-container label,
-.form .select-container label,
-form .input-container label,
-form .select-container label {
-  font-weight: 400;
-  margin-bottom: 8px; }
-
-.form .input-container input,
-.form .input-container select,
-.form .select-container input,
-.form .select-container select,
-form .input-container input,
-form .input-container select,
-form .select-container input,
-form .select-container select {
-  height: 40px;
-  margin-bottom: 24px;
-  padding: 8px;
-  width: 300px;
-  border: 1px solid #cccccc;
-  outline: 0; }
-
-.form .input-container input:focus,
-.form .input-container select:focus,
-.form .select-container input:focus,
-.form .select-container select:focus,
-form .input-container input:focus,
-form .input-container select:focus,
-form .select-container input:focus,
-form .select-container select:focus {
-  border: 1px solid #0069af;
-  box-shadow: 0 0 5px #0069af; }
-
-.form .input-container input.error,
-.form .input-container select.error,
-.form .select-container input.error,
-.form .select-container select.error,
-form .input-container input.error,
-form .input-container select.error,
-form .select-container input.error,
-form .select-container select.error {
-  border: 2px solid #da1c25;
-  box-shadow: 0 0 5px #da1c25; }
-
-.form .input-container input.error ~ span,
-.form .input-container select.error ~ span,
-.form .select-container input.error ~ span,
-.form .select-container select.error ~ span,
-form .input-container input.error ~ span,
-form .input-container select.error ~ span,
-form .select-container input.error ~ span,
-form .select-container select.error ~ span {
-  font-size: 0.75em;
-  color: #da1c25;
-  margin-top: 8px;
-  font-style: italic; }
-
-.form .input-container select,
-.form .select-container select,
-form .input-container select,
-form .select-container select {
-  border-radius: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: transparent url(down.svg) no-repeat right 5px center;
-  background-size: 15px; }
-
-.form .checkbox-container label,
-.form .radio-container label,
-form .checkbox-container label,
-form .radio-container label {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.form .checkbox-container label:hover input ~ .checkmark, .form .checkbox-container label:checked,
-.form .radio-container label:hover input ~ .checkmark,
-.form .radio-container label:checked,
-form .checkbox-container label:hover input ~ .checkmark,
-form .checkbox-container label:checked,
-form .radio-container label:hover input ~ .checkmark,
-form .radio-container label:checked {
-  background-color: #f6f6f6; }
-
-.form .checkbox-container label input,
-.form .radio-container label input,
-form .checkbox-container label input,
-form .radio-container label input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0; }
-
-.form .checkbox-container label input:checked ~ .checkmark:after,
-.form .radio-container label input:checked ~ .checkmark:after,
-form .checkbox-container label input:checked ~ .checkmark:after,
-form .radio-container label input:checked ~ .checkmark:after {
-  display: block; }
-
-.form .checkbox-container label input:checked ~ .checkmark,
-.form .radio-container label input:checked ~ .checkmark,
-form .checkbox-container label input:checked ~ .checkmark,
-form .radio-container label input:checked ~ .checkmark {
-  background-color: #666666; }
-
-.form .checkbox-container label .checkmark,
-.form .radio-container label .checkmark,
-form .checkbox-container label .checkmark,
-form .radio-container label .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  border: 1px solid #cccccc; }
-
-.form .checkbox-container label .checkmark:after,
-.form .radio-container label .checkmark:after,
-form .checkbox-container label .checkmark:after,
-form .radio-container label .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none; }
-
-.form .checkbox-container label .checkmark:after,
-.form .radio-container label .checkmark:after,
-form .checkbox-container label .checkmark:after,
-form .radio-container label .checkmark:after {
-  left: 8px;
-  top: 4px;
-  width: 7px;
-  height: 13px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg); }
-
-.form .radio-container label .checkmark,
-form .radio-container label .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  border-radius: 50%; }
-
-.form .radio-container label .checkmark:after,
-form .radio-container label .checkmark:after {
-  top: 6px;
-  left: 6px;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  background: white; }
-
-.form #state,
-form #state {
-  width: 80px; }
-
-.form #zip,
-form #zip {
-  width: 115px; }
-
-.form .notification,
-form .notification {
-  font-weight: 600; }
-
-.alert {
-  color: #da1c25;
-  padding: 0;
-  font-size: 0.8em; }
-
 * {
-  font-family: "Open Sans", Arial, sans-serif; }
+  font-family: "Open Sans", Arial, sans-serif;
+  box-sizing: border-box; }
+
+.visually-hidden {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
