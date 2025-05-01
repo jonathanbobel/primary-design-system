@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import { Route, HashRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import ScrollToTop from "./Atomic_Elements/Molecules/ScrollToTop";
 import Home from "./Design_System/Main/Home";
 import Release from "./Design_System/Main/Release";
